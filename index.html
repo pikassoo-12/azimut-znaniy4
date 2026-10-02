@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Азимут знаний — онлайн-центр для школьников</title>
+
+  <meta
+    name="description"
+    content="Дополнительное образование для школьников 1–11 классов: школьные предметы, подготовка к экзаменам и развитие интересов."
+  >
+
+  <meta name="theme-color" content="#7047eb">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="Азимут знаний — главная">
+        <img
+  class="school-logo-image"
+  src="images/logo.png"
+  alt=""
+  width="64"
+  height="64"
+>
+
+        <span class="logo__text">
+          <strong>Азимут знаний</strong>
+          <small>Онлайн-центр дополнительного образования</small>
+        </span>
+      </a>
+
+      <nav class="nav school-top-nav" aria-label="Основная навигация">
+        <a href="#about">О центре</a>
+        <a href="#classes">Классы</a>
+        <a href="#subjects">Предметы</a>
+        <a href="#how">Как учимся</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
+      <a
+  class="button button--small"
+  href="diagnostic.html"
+>
+  Бесплатная диагностика
+</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+    <section class="school-hero" id="home">
+  <div class="container school-hero__layout">
+
+    <div class="school-hero__content">
+      <span class="school-label">
+        ✨ Для школьников 1–11 классов
+      </span>
+
+      <h1>
+        Помогаем учиться
+        <span>с интересом</span>
+        и верить в свои силы!
+      </h1>
+
+      <p class="school-hero__description">
+        Разбираемся в сложных темах, готовимся к экзаменам
+        и открываем новые интересы.
+      </p>
+
+      <p class="school-hero__description">
+        Онлайн, с поддержкой преподавателя
+        и вниманием к ребёнку.
+      </p>
+
+      <div class="school-benefits">
+        <div class="school-benefit">
+          <span class="school-benefit__icon benefit-green"
+                aria-hidden="true">🎯</span>
+          <span>Укрепляем<br>знания</span>
+        </div>
+
+        <div class="school-benefit">
+          <span class="school-benefit__icon benefit-yellow"
+                aria-hidden="true">⭐</span>
+          <span>Готовимся<br>к ОГЭ и ЕГЭ</span>
+        </div>
+
+        <div class="school-benefit">
+          <span class="school-benefit__icon benefit-pink"
+                aria-hidden="true">💗</span>
+          <span>Развиваем<br>интересы</span>
+        </div>
+
+        <div class="school-benefit">
+          <span class="school-benefit__icon benefit-blue"
+                aria-hidden="true">💻</span>
+          <span>Занимаемся<br>из дома</span>
+        </div>
+      </div>
+
+      <div class="school-hero__actions">
+        <a class="button" href="#classes">
+          Выбрать направление
+        </a>
+
+        <a class="button button--outline" href="#process">
+          Как проходят занятия
+        </a>
+      </div>
+
+      <p class="school-hero__note">
+        Большие открытия начинаются с маленького «я понял!»
+      </p>
+    </div>
+
+    <div class="school-portrait">
+      <div class="school-portrait__frame">
+
+     
+      
+
+       
+        <img
+          class="school-portrait__image"
+          src="images/school-hero.jpg"
+          alt="Героиня онлайн-центра «Азимут знаний»"
+          width="900"
+          height="1100"
+          fetchpriority="high"
+        >
+        
+
+      </div>
+
+      <div class="school-portrait__tag portrait-tag--top">
+        <span aria-hidden="true">🌟</span>
+        У меня получится!
+      </div>
+
+      <div class="school-portrait__tag portrait-tag--side">
+        Можно спрашивать 💬
+      </div>
+
+      <div class="school-portrait__caption">
+        <span aria-hidden="true">💜</span>
+        <p>
+          Не обязательно знать всё.<br>
+          <strong>Главное — начать разбираться.</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- О ЦЕНТРЕ -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div>
+          <span class="section-label">Знакомимся</span>
+          <h2 class="about-title-space">
+  Дополняем школу.<br>
+  Расширяем возможности.
+</h2>
+          
+        </div>
+
+        <div class="about__text">
+          <p>
+            «Азимут знаний» — онлайн-центр дополнительного образования
+            для школьников 1–11 классов.
+          </p>
+
+          <p>
+            Здесь можно вернуться к непонятной теме, потренироваться
+            на заданиях и углубиться в то, что действительно интересно.
+            Дополнительные занятия помогают укрепить основное обучение.
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- КАРТИНКА МЕЖДУ БЛОКАМИ -->
+
+<div class="school-between">
+  <div class="container">
+
+    <div class="school-between__frame">
+
+      <img
+  class="school-between__image"
+  src="images/school-between.png"
+  alt="Онлайн-занятие с преподавателем"
+  loading="eager"
+  onload="this.parentElement.classList.add('has-image')"
+  onerror="this.parentElement.classList.remove('has-image')"
+>
+
+      <div class="school-between__placeholder">
+        <span aria-hidden="true">✦</span>
+        <p>Здесь будет ваша картинка</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    <!-- КЛАССЫ -->
+    <section class="section section--soft" id="classes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">У каждого свой старт</span>
+          <h2>Для какого класса ищете занятия?</h2>
+          <p>На каждом этапе — свои задачи, открытия и поводы для гордости.</p>
+        </div>
+
+        <div class="class-grid">
+          <article class="class-card class-card--yellow">
+            <div class="class-card__top">
+              <span class="class-card__emoji" aria-hidden="true">🎒</span>
+              <span class="badge">Начальная школа</span>
+            </div>
+
+            <h3>1–4 классы</h3>
+            <p>Создаём основу и поддерживаем интерес к учёбе.</p>
+
+            <ul class="check-list">
+              <li>Чтение и понимание текста</li>
+              <li>Русский язык и грамотное письмо</li>
+              <li>Математика и логическое мышление</li>
+              <li>Первые шаги в английском языке</li>
+            </ul>
+
+            <a class="button" href="school-primary.html">
+  Подробнее о занятиях
+</a>
+          </article>
+
+          <article class="class-card class-card--blue">
+            <div class="class-card__top">
+              <span class="class-card__emoji" aria-hidden="true">🌍</span>
+              <span class="badge">Средняя школа</span>
+            </div>
+
+            <h3>5–8 классы</h3>
+            <p>Разбираемся в сложном и учимся действовать самостоятельно.</p>
+
+            <ul class="check-list">
+              <li>Поддержка по школьным предметам</li>
+              <li>Разбор тем, вызывающих трудности</li>
+              <li>Углубление знаний и практика</li>
+              <li>Развитие учебной самостоятельности</li>
+            </ul>
+
+            <a class="button" href="school-middle.html">
+  Подробнее о занятиях
+</a>
+          </article>
+
+          <article class="class-card class-card--purple">
+            <div class="class-card__top">
+              <span class="class-card__emoji" aria-hidden="true">🚀</span>
+              <span class="badge">Старшие классы</span>
+            </div>
+
+            <h3>9–11 классы</h3>
+            <p>Определяем цель и последовательно готовимся к следующему этапу.</p>
+
+            <ul class="check-list">
+              <li>Подготовка к ОГЭ и ЕГЭ</li>
+              <li>Повторение и систематизация знаний</li>
+              <li>Практика экзаменационных заданий</li>
+              <li>Разбор ошибок и сложных тем</li>
+            </ul>
+
+            <a class="button" href="school-senior.html">
+  Подробнее о занятиях
+</a>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ПРЕДМЕТЫ -->
+    <section class="section" id="subjects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Разбираемся вместе</span>
+          <h2>Школьные предметы</h2>
+          <p>Выберите то, в чём хочется чувствовать себя увереннее.</p>
+        </div>
+
+        <div class="subject-grid">
+          <a class="subject-card" href="math.html">
+            <span class="icon icon--green" aria-hidden="true">🔢</span>
+            <h3>Математика</h3>
+            <p>От простых задач к уверенным решениям</p>
+          </a>
+
+          <a class="subject-card" href="russian.html">
+            <span class="icon icon--pink" aria-hidden="true">✍️</span>
+            <h3>Русский язык</h3>
+            <p>Грамотность и понимание правил</p>
+          </a>
+
+          <a class="subject-card" href="english.html">
+            <span class="icon icon--blue" aria-hidden="true">💬</span>
+            <h3>Английский язык</h3>
+            <p>Слова, грамматика и разговорная практика</p>
+          </a>
+
+          <a class="subject-card" href="literature.html">
+            <span class="icon icon--yellow" aria-hidden="true">📖</span>
+            <h3>Литература</h3>
+            <p>Читаем, обсуждаем и формулируем мысли</p>
+          </a>
+
+          <a class="subject-card" href="physics.html">
+            <span class="icon icon--purple" aria-hidden="true">⚛️</span>
+            <h3>Физика</h3>
+            <p>Законы природы на понятных примерах</p>
+          </a>
+
+          <a class="subject-card" href="chemistry.html">
+            <span class="icon icon--pink" aria-hidden="true">🧪</span>
+            <h3>Химия</h3>
+            <p>Вещества, реакции и логика превращений</p>
+          </a>
+
+          <a class="subject-card" href="biology.html">
+            <span class="icon icon--green" aria-hidden="true">🌿</span>
+            <h3>Биология</h3>
+            <p>Изучаем, как устроен живой мир</p>
+          </a>
+
+          <a class="subject-card" href="history.html">
+            <span class="icon icon--yellow" aria-hidden="true">🏛️</span>
+            <h3>История</h3>
+            <p>События, причины и связи между ними</p>
+          </a>
+
+          <a class="subject-card" href="geography.html">
+            <span class="icon icon--blue" aria-hidden="true">🌎</span>
+            <h3>География</h3>
+            <p>Открываем планету и учимся читать карты</p>
+          </a>
+
+          <a class="subject-card" href="informatics.html">
+            <span class="icon icon--purple" aria-hidden="true">💻</span>
+            <h3>Информатика</h3>
+            <p>Логика, алгоритмы и работа с информацией</p>
+          </a>
+
+          <a class="subject-card" href="social.html">
+            <span class="icon icon--pink" aria-hidden="true">🤝</span>
+            <h3>Обществознание</h3>
+            <p>Человек и общество на примерах из жизни</p>
+          </a>
+
+          <a class="subject-card" href="nature.html">
+            <span class="icon icon--green" aria-hidden="true">🔎</span>
+            <h3>Окружающий мир</h3>
+            <p>Наблюдаем, исследуем и задаём вопросы</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКЗАМЕНЫ -->
+    <section class="section exams" id="exams">
+      <div class="container exams__inner">
+        <div class="exams__content">
+          <span class="section-label">Двигаемся к цели</span>
+          <h2>ОГЭ и ЕГЭ:<br>готовимся по шагам</h2>
+
+          <p>
+            От повторения теории — к практике. Разбираем задания,
+            возвращаемся к трудным темам и учимся понимать свои ошибки.
+          </p>
+
+          <a class="button exam-button-space" href="#application">
+            Выбрать подготовку
+            
+          </a>
+        </div>
+
+        <div class="exam-grid">
+          <article class="exam-card">
+            <span class="icon icon--purple" aria-hidden="true">🎯</span>
+            <span class="exam-card__class">9 класс</span>
+            <h3>ОГЭ</h3>
+            <p>
+              Укрепляем базу и знакомимся с форматом
+              экзаменационных заданий.
+            </p>
+          </article>
+
+          <article class="exam-card">
+            <span class="icon icon--pink" aria-hidden="true">🏆</span>
+            <span class="exam-card__class">10–11 классы</span>
+            <h3>ЕГЭ</h3>
+            <p>
+              Систематизируем знания и отрабатываем
+              задания выбранного предмета.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОДХОД -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">В центре внимания — ребёнок</span>
+          <h2>Учиться легче, когда тебя поддерживают</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon icon--purple" aria-hidden="true">🧩</span>
+            <h3>Понятные объяснения</h3>
+            <p>
+              Разбираем сложное на небольшие шаги
+              и связываем новую тему со знакомыми примерами.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon--green" aria-hidden="true">💚</span>
+            <h3>Внимание к трудностям</h3>
+            <p>
+              Помогаем разобраться в том месте,
+              где возник вопрос, и спокойно попробовать ещё раз.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon--blue" aria-hidden="true">🙋</span>
+            <h3>Живое общение</h3>
+            <p>
+              Обсуждаем, задаём вопросы и рассуждаем.
+              Ученик участвует в занятии, а не просто слушает.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon icon--yellow" aria-hidden="true">🌟</span>
+            <h3>Практика и прогресс</h3>
+            <p>
+              Закрепляем знания в заданиях и замечаем,
+              что уже получается самостоятельно.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭТАПЫ ОБУЧЕНИЯ -->
+    <section class="section section--soft" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Понятный путь</span>
+          <h2>Как строится обучение?</h2>
+          <p>Начинаем с вашей задачи и постепенно двигаемся вперёд.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number">01</span>
+            <h3>Знакомимся</h3>
+            <p>
+              Обсуждаем класс, интересы ребёнка
+              и темы, в которых нужна помощь.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step__number">02</span>
+            <h3>Определяем цель</h3>
+            <p>
+              Выбираем, над чем работаем:
+              школьная база, сложный предмет или экзамен.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step__number">03</span>
+            <h3>Учимся и пробуем</h3>
+            <p>
+              Разбираем теорию, задаём вопросы
+              и закрепляем материал на практике.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step__number">04</span>
+            <h3>Следим за прогрессом</h3>
+            <p>
+              Отмечаем успехи, разбираем ошибки
+              и определяем следующие шаги.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ДОПОЛНИТЕЛЬНЫЕ ИНТЕРЕСЫ -->
+    <!-- КРУЖКИ ДЛЯ 1–5 КЛАССОВ -->
+
+<section
+  class="school-interests school-clubs"
+  id="interests"
+>
+  <div class="container school-interests__layout">
+
+    <div class="school-interests__intro">
+
+      <span class="school-label">
+        Готовим новые открытия
+      </span>
+
+      <h2>
+        Кружки для<br>
+        <span>1–5 классов</span>
+      </h2>
+
+      <p>
+        Место, где можно пробовать новое,
+        развивать любопытство и находить
+        любимые занятия.
+      </p>
+
+      <div class="school-clubs__announcement">
+        <span
+          class="school-clubs__dot"
+          aria-hidden="true"
+        ></span>
+
+        <div>
+          <strong>Скоро откроем набор</strong>
+
+          <p>
+            Готовим программы кружков.
+            Направления, расписание и условия участия
+            появятся здесь после запуска.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="school-interest-grid">
+
+      <article class="school-interest interest--pink">
+
+        <div class="school-clubs__card-top">
+          <span
+            class="school-interest__icon"
+            aria-hidden="true"
+          >
+            💬
+          </span>
+
+          <span class="school-clubs__soon">
+            В разработке
+          </span>
+        </div>
+
+        <h3>Общение и самовыражение</h3>
+
+        <p>
+          Готовим занятия, на которых дети смогут
+          делиться идеями, слушать друг друга
+          и увереннее выражать свои мысли.
+        </p>
+
+      </article>
+
+      <article class="school-interest interest--purple">
+
+        <div class="school-clubs__card-top">
+          <span
+            class="school-interest__icon"
+            aria-hidden="true"
+          >
+            🧠
+          </span>
+
+          <span class="school-clubs__soon">
+            В разработке
+          </span>
+        </div>
+
+        <h3>Логика и мышление</h3>
+
+        <p>
+          Загадки, закономерности и необычные задачи —
+          для тех, кому интересно искать
+          собственный путь к ответу.
+        </p>
+
+      </article>
+
+      <article class="school-interest interest--blue">
+
+        <div class="school-clubs__card-top">
+          <span
+            class="school-interest__icon"
+            aria-hidden="true"
+          >
+            🔎
+          </span>
+
+          <span class="school-clubs__soon">
+            В разработке
+          </span>
+        </div>
+
+        <h3>Мир открытий</h3>
+
+        <p>
+          Планируем исследовать окружающий мир,
+          задавать вопросы и искать объяснения
+          тому, что происходит вокруг.
+        </p>
+
+      </article>
+
+      <article class="school-interest interest--yellow">
+
+        <div class="school-clubs__card-top">
+          <span
+            class="school-interest__icon"
+            aria-hidden="true"
+          >
+            🎨
+          </span>
+
+          <span class="school-clubs__soon">
+            В разработке
+          </span>
+        </div>
+
+        <h3>Творческая мастерская</h3>
+
+        <p>
+          Пространство для фантазии, собственных
+          идей и небольших проектов,
+          которые интересно создавать.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+  
+    
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ВОПРОСЫ -->
+    <section class="section section--soft" id="faq">
+      <div class="container faq">
+        <div class="faq__intro">
+          <span class="section-label">Родителям</span>
+          <h2>Есть вопросы?<br>Давайте разберёмся.</h2>
+          <p>Самое важное о формате занятий.</p>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary>Это замена обычной школе?</summary>
+            <p>
+              Нет. Занятия в центре дополняют основное образование:
+              помогают разобраться в предметах, углубить знания
+              и подготовиться к экзаменам.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Что понадобится для онлайн-занятий?</summary>
+            <p>
+              Компьютер или планшет, стабильное подключение
+              к интернету, камера и микрофон. Также стоит
+              подготовить тетрадь, ручку и удобное рабочее место.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Можно ли начать, если есть пробелы в знаниях?</summary>
+            <p>
+              Да, работу можно начать с тем, которые вызывают
+              трудности. Сначала важно понять, где возникло
+              непонимание, а затем двигаться от простого к сложному.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Нужно ли родителю сидеть рядом с ребёнком?</summary>
+            <p>
+              Младшим школьникам может понадобиться помощь
+              с подключением и подготовкой материалов.
+              Дальнейшее участие лучше обсудить с преподавателем
+              с учётом возраста и самостоятельности ребёнка.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Как выбрать подходящее направление?</summary>
+            <p>
+              Начните с главной задачи: укрепить школьную базу,
+              разобраться в конкретном предмете, подготовиться
+              к экзамену или развить интерес. Затем учитывайте
+              класс и текущий уровень ребёнка.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЗАЯВКА: ОТПРАВКУ ПОДКЛЮЧИМ В SCRIPT.JS -->
+    <section class="school-meeting" id="request">
+  <div class="container">
+    <div class="school-meeting__layout">
+
+      <div class="school-meeting__intro">
+        <span class="school-label school-label--white">
+          Начнём со знакомства
+        </span>
+
+        <h2>
+          Найдём занятие,<br>
+          с которого<br>
+          <span>хочется начать!</span>
+        </h2>
+
+        <p>
+          Расскажите, в каком классе учится ребёнок
+          и с чем нужна помощь. Это поможет
+          подобрать подходящее направление.
+        </p>
+
+        <div class="school-meeting__chips">
+          <span>📚 Понятные темы</span>
+          <span>💬 Живое общение</span>
+          <span>🌱 Новые возможности</span>
+        </div>
+
+          <div class="school-meeting__quote">
+    <span aria-hidden="true">“</span>
+
+    <p>
+      Большой путь начинается<br>
+      с маленького интереса.
+    </p>
+  </div>
+
+  <a
+    class="button school-diagnostic-button"
+    href="diagnostic.html"
+  >
+    Бесплатная диагностика
+    <span aria-hidden="true">↗</span>
+  </a>
+
+</div>
+<!-- Здесь заканчивается левая колонка -->
+      
+
+      <div class="school-application">
+        <div class="school-application__tab">
+          Ваша точка старта ✨
+        </div>
+
+        <form
+  class="school-application__form"
+  id="request-form"
+  action="diagnostic.html"
+  method="post"
+>
+          <div class="school-application__heading">
+            <span class="school-application__icon"
+                  aria-hidden="true">✏️</span>
+
+            <div>
+              <h3>Давайте познакомимся</h3>
+              <p>Несколько слов о вас и вашей задаче.</p>
+            </div>
+          </div>
+
+          <div class="school-form-grid">
+            <div class="school-field">
+              <label for="parent-name">Ваше имя</label>
+              <input
+                id="parent-name"
+                name="parentName"
+                type="text"
+                autocomplete="name"
+                placeholder="Как к вам обращаться?"
+                required
+              >
+            </div>
+
+            <div class="school-field">
+              <label for="phone">Телефон для связи</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+7 ..."
+                required
+              >
+            </div>
+
+            <div class="school-field">
+              <label for="student-grade">Класс ребёнка</label>
+
+              <select id="student-grade" name="grade" required>
+                <option value="" disabled selected>
+                  Выберите класс
+                </option>
+                <option value="1">1 класс</option>
+                <option value="2">2 класс</option>
+                <option value="3">3 класс</option>
+                <option value="4">4 класс</option>
+                <option value="5">5 класс</option>
+                <option value="6">6 класс</option>
+                <option value="7">7 класс</option>
+                <option value="8">8 класс</option>
+                <option value="9">9 класс</option>
+                <option value="10">10 класс</option>
+                <option value="11">11 класс</option>
+              </select>
+            </div>
+
+            <div class="school-field">
+              <label for="learning-purpose">Цель занятий</label>
+
+              <select
+                id="learning-purpose"
+                name="purpose"
+                required
+              >
+                <option value="" disabled selected>
+                  Выберите цель
+                </option>
+                <option value="school">
+                  Разобраться в предмете
+                </option>
+                <option value="oge">Подготовиться к ОГЭ</option>
+                <option value="ege">Подготовиться к ЕГЭ</option>
+                <option value="interests">
+                  Развить интересы
+                </option>
+                <option value="help">
+                  Нужна помощь с выбором
+                </option>
+              </select>
+            </div>
+
+            <div class="school-field school-field--wide">
+              <label for="learning-goal">
+                Что важно учесть?
+                <span>Необязательно</span>
+              </label>
+
+              <textarea
+                id="learning-goal"
+                name="goal"
+                rows="3"
+                placeholder="Например, нужна помощь с математикой"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+  class="button school-application__submit"
+  type="submit"
+  disabled
+  aria-describedby="form-status"
+>
+  Отправить заявку
+</button>
+
+          <p
+            class="school-application__notice"
+            id="form-status"
+            role="status"
+          >
+            Приём заявок пока недоступен.
+            Данные из формы не отправляются.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#home">
+        <img
+  class="school-logo-image"
+  src="images/logo.png"
+  alt=""
+  width="64"
+  height="64"
+>
+        <span class="logo__text">
+          <strong>Азимут знаний</strong>
+          <small>Онлайн-центр дополнительного образования</small>
+        </span>
+      </a>
+
+      <p>Учимся. Пробуем. Открываем новое.</p>
+
+      <a class="footer__link" href="#home">Наверх</a>
+    </div>
+  </footer>
+
+  <!-- Подключим после создания файла:
+  <script src="script.js" defer></script>
+  -->
+  <aside class="school-dock" aria-label="Подбор занятий">
+  <div class="school-dock__text">
+    <span class="school-dock__icon" aria-hidden="true">✨</span>
+
+    <div>
+      <strong>С чего начнём?</strong>
+      <span>Посмотрите форматы занятий</span>
+    </div>
+  </div>
+
+  <a class="button school-dock__button" href="tariffs.html">
+    Подобрать занятие
+  </a>
+</aside>
+<script src="application.js" defer></script>
+</body>
+</html>

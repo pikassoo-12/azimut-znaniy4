@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Предмет — Азимут знаний</title>
+
+  <meta
+    name="description"
+    content="Преподаватели онлайн-центра «Азимут знаний». Школьная программа и подготовка к экзаменам."
+  >
+
+  <meta name="theme-color" content="#7048eb">
+
+  <!-- Используем оформление, которое уже создали для тарифов -->
+  <link rel="stylesheet" href="tariffs.css">
+
+  <!-- Дополнительное оформление предметных страниц -->
+  <link rel="stylesheet" href="subject.css">
+
+  <script src="subject.js" defer></script>
+</head>
+
+<body class="subject-page">
+
+  <a class="skip-link" href="#main">
+    Перейти к содержимому
+  </a>
+
+  <!-- ШАПКА -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="logo"
+        href="index.html"
+        aria-label="Азимут знаний — на главную"
+      >
+        <img
+          src="images/logo.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="logo-text">
+          <strong>Азимут знаний</strong>
+
+          <small>
+            Онлайн-центр дополнительного образования
+          </small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="tariffs.html">Тарифы</a>
+        <a href="#teachers">Преподаватели</a>
+      </nav>
+
+      <a
+        class="button button-small header-button"
+        href="tariffs.html#diagnostic"
+      >
+        Бесплатная диагностика
+      </a>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+
+    <section class="subject-hero">
+      <div class="container">
+
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span aria-hidden="true">/</span>
+          <span id="breadcrumb-subject">Предмет</span>
+        </nav>
+
+        <div class="subject-hero-grid">
+
+          <div>
+            <span class="eyebrow">
+              Учимся с интересом
+            </span>
+
+            <h1 id="subject-title">Предмет</h1>
+
+            <p
+              class="subject-description"
+              id="subject-description"
+            ></p>
+
+            <div class="subject-actions">
+              <a class="button" href="#teachers">
+                Посмотреть преподавателей
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="button button-outline"
+                href="tariffs.html"
+              >
+                Посмотреть тарифы
+              </a>
+            </div>
+
+            <div class="subject-tags">
+              <span>Занятия онлайн</span>
+              <span>По школьной программе</span>
+              <span>Разные форматы обучения</span>
+            </div>
+          </div>
+
+          <aside class="subject-notebook">
+            <span class="notebook-sticker">
+              Маленькие шаги — большие открытия
+            </span>
+
+            <div
+              class="subject-symbol"
+              id="subject-symbol"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h2>
+              Разобраться.
+              <br>
+              Попробовать.
+              <br>
+              Поверить в себя.
+            </h2>
+
+            <p>
+              Подберём преподавателя под класс
+              и учебную задачу ребёнка.
+            </p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕПОДАВАТЕЛИ -->
+
+    <section
+      class="container section"
+      id="teachers"
+      aria-labelledby="teachers-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">
+          Знакомимся с командой
+        </span>
+
+        <h2 id="teachers-title">
+          Кто поможет разобраться в предмете?
+        </h2>
+
+        <p>
+          Выберите школьную программу или подготовку
+          к экзамену, затем посмотрите преподавателей.
+        </p>
+      </div>
+
+      <div
+        class="teacher-modes"
+        id="teacher-modes"
+        role="group"
+        aria-label="Направление занятий"
+      ></div>
+
+      <div class="class-filter-block" id="class-filter-block">
+        <p class="filter-label">
+          Какой класс?
+        </p>
+
+        <div
+          class="teacher-classes"
+          id="teacher-classes"
+          role="group"
+          aria-label="Выбор класса"
+        ></div>
+      </div>
+
+      <div class="teacher-results-heading">
+        <h3 id="teacher-section-title">
+          Школьная программа
+        </h3>
+
+        <p id="teacher-count" role="status"></p>
+      </div>
+
+      <div class="teacher-grid" id="teacher-grid"></div>
+
+      <p class="teachers-empty" id="teachers-empty" hidden>
+        Информация о преподавателях этого направления
+        скоро появится.
+      </p>
+
+      <noscript>
+        <p class="notice">
+          Для просмотра карточек преподавателей
+          включите JavaScript в браузере.
+        </p>
+      </noscript>
+    </section>
+
+    <!-- ПОМОЩЬ С ВЫБОРОМ -->
+
+    <section class="container subject-help">
+      <div class="help-icon" aria-hidden="true">
+        ✦
+      </div>
+
+      <div class="subject-help-content">
+        <span class="eyebrow">
+          Начнём со знакомства
+        </span>
+
+        <h2>Не знаете, какой формат выбрать?</h2>
+
+        <p>
+          Бесплатная диагностика поможет определить
+          уровень ребёнка, пробелы и точки роста.
+        </p>
+      </div>
+
+      <a
+        class="button"
+        href="tariffs.html#diagnostic"
+      >
+        Подробнее о диагностике
+      </a>
+    </section>
+
+    <!-- ДРУГИЕ ПРЕДМЕТЫ -->
+
+    <section
+      class="container section"
+      aria-labelledby="other-subjects-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">
+          Продолжаем знакомство
+        </span>
+
+        <h2 id="other-subjects-title">
+          Другие предметы
+        </h2>
+      </div>
+
+      <nav
+        class="other-subjects"
+        id="other-subjects"
+        aria-label="Другие предметы школы"
+      ></nav>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="logo subject-footer-logo" href="index.html">
+        <img
+          src="images/logo.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="logo-text">
+          <strong>Азимут знаний</strong>
+        </span>
+      </a>
+
+      <p>Учимся. Пробуем. Открываем новое.</p>
+
+      <a href="index.html">← На главную</a>
+
+    </div>
+  </footer>
+
+  <!-- ЗАКРЕПЛЁННАЯ КНОПКА -->
+
+  <aside class="bottom-dock" aria-label="Выбор занятий">
+    <div class="dock-text">
+      <strong>Найдём подходящий формат?</strong>
+      <span>Посмотрите программы и стоимость</span>
+    </div>
+
+    <a class="button" href="tariffs.html">
+      Подобрать занятие
+      <span aria-hidden="true">↗</span>
+    </a>
+  </aside>
+
+</body>
+</html>

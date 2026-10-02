@@ -1,0 +1,266 @@
+.diagnostic-page {
+  padding-bottom: 0;
+}
+
+.diagnosis-hero {
+  padding: 78px 0;
+
+  background:
+    radial-gradient(
+      ellipse at 95% 10%,
+      #fff0b5,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 0 100%,
+      #e0f3ff,
+      transparent 55%
+    ),
+    #fffefa;
+}
+
+.diagnosis-hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.diagnosis-hero h1 {
+  font-size: clamp(35px, 4vw, 55px);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+}
+
+.diagnosis-hero h1 span {
+  display: block;
+  margin-top: 10px;
+  color: var(--purple);
+}
+
+.diagnosis-lead {
+  max-width: 630px;
+  margin-top: 28px;
+
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+.diagnosis-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+
+  margin-top: 37px;
+}
+
+.diagnosis-ticket {
+  position: relative;
+  overflow: hidden;
+
+  padding: 38px;
+
+  border: 3px solid white;
+  border-radius: 32px 32px 70px 32px;
+
+  background: var(--purple-light);
+  box-shadow: var(--shadow);
+
+  transform: rotate(2deg);
+}
+
+.diagnosis-ticket-label {
+  display: inline-block;
+  padding: 8px 13px;
+
+  border-radius: 10px;
+  background: var(--yellow);
+
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.diagnosis-ticket > strong {
+  display: block;
+  margin-top: 28px;
+
+  color: var(--purple-dark);
+  font-size: 80px;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.diagnosis-ticket h2 {
+  position: relative;
+  margin-top: 20px;
+
+  font-size: 27px;
+  line-height: 1.45;
+}
+
+.diagnosis-ticket p {
+  position: relative;
+  max-width: 300px;
+  margin-top: 19px;
+
+  color: #505b73;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.diagnosis-ticket-star {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+
+  color: #b9a2ef;
+  font-size: 65px;
+}
+
+.diagnosis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 23px;
+}
+
+.diagnosis-card {
+  padding: 28px;
+
+  border: 1px solid #e3ddef;
+  border-radius: 25px;
+
+  background: #f7f2ff;
+}
+
+.diagnosis-card:nth-child(2) {
+  background: #eaf6ff;
+}
+
+.diagnosis-card:nth-child(3) {
+  background: #fff7d8;
+}
+
+.diagnosis-card:nth-child(4) {
+  background: #e8f8ef;
+}
+
+.diagnosis-number {
+  display: inline-block;
+
+  color: var(--purple-dark);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.diagnosis-card h3 {
+  margin-top: 23px;
+
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.diagnosis-card p {
+  margin-top: 18px;
+
+  color: #505b73;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.diagnosis-soft {
+  background: #faf8ff;
+}
+
+.diagnosis-result {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 40px;
+
+  padding: 42px;
+
+  border: 2px solid #ffe39a;
+  border-radius: 28px;
+
+  background: #fffaf0;
+}
+
+.diagnosis-result h2 {
+  max-width: 700px;
+  font-size: clamp(27px, 3vw, 37px);
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.diagnosis-result p {
+  margin-top: 19px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+@media (max-width: 1050px) {
+  .diagnosis-hero-grid {
+    gap: 35px;
+  }
+
+  .diagnosis-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .diagnosis-result {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnosis-result > .button {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .diagnosis-hero {
+    padding: 45px 0 55px;
+  }
+
+  .diagnosis-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .diagnosis-lead {
+    font-size: 16px;
+  }
+
+  .diagnosis-actions {
+    gap: 17px;
+  }
+
+  .diagnosis-actions .button {
+    width: 100%;
+  }
+
+  .diagnosis-ticket {
+    width: calc(100% - 10px);
+    justify-self: center;
+    padding: 29px;
+  }
+
+  .diagnosis-ticket > strong {
+    font-size: 70px;
+  }
+
+  .diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnosis-result {
+    padding: 28px;
+    gap: 28px;
+  }
+
+  .diagnosis-result > .button {
+    width: 100%;
+  }
+}

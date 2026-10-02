@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Тарифы — Азимут знаний</title>
+
+  <meta
+    name="description"
+    content="Тарифы онлайн-школы «Азимут знаний»: дошкольники, 1–11 классы, подготовка к ОГЭ и ЕГЭ, мини-курсы и летние программы."
+  >
+
+  <meta name="theme-color" content="#7048eb">
+
+  <link rel="stylesheet" href="tariffs.css">
+
+  <script src="tariffs.js" defer></script>
+</head>
+
+<body class="tariffs-page">
+
+  <a class="skip-link" href="#main">
+    Перейти к содержимому
+  </a>
+
+  <!-- ШАПКА -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="logo"
+        href="index.html"
+        aria-label="Азимут знаний — на главную"
+      >
+        <img
+          src="images/logo.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="logo-text">
+          <strong>Азимут знаний</strong>
+
+          <small>
+            Онлайн-центр дополнительного образования
+          </small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+
+        <a href="tariffs.html" aria-current="page">
+          Тарифы
+        </a>
+
+        <a href="#how-to-start">Как начать</a>
+      </nav>
+
+      <a
+        class="button button-small header-button"
+        href="#diagnostic"
+      >
+        Диагностика за 0 ₽
+      </a>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <span class="eyebrow">
+            У каждого — свой азимут
+          </span>
+
+          <h1>
+            Большие открытия.
+            <span>Подходящий тариф.</span>
+          </h1>
+
+          <p class="hero-description">
+            От первых букв до выпускных экзаменов.
+            Выберите возраст, цель и формат,
+            в котором ребёнку будет комфортно учиться.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#catalog">
+              Посмотреть тарифы
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="button button-outline"
+              href="#diagnostic"
+            >
+              Начать с диагностики
+            </a>
+          </div>
+
+          <div class="hero-tags">
+            <span>Дошкольники и 1–11 классы</span>
+            <span>Онлайн из дома</span>
+            <span>Разные форматы обучения</span>
+          </div>
+        </div>
+
+        <aside
+          class="learning-map"
+          aria-label="Форматы обучения"
+        >
+          <div class="map-sticker">
+            Учиться по-своему ✦
+          </div>
+
+          <h2>
+            Ваш маршрут
+            <br>
+            к новым знаниям
+          </h2>
+
+          <div class="map-item">
+            <span class="map-number map-number-yellow">
+              01
+            </span>
+
+            <div>
+              <strong>Самостоятельно</strong>
+              <p>В своём темпе</p>
+            </div>
+
+            <span class="map-symbol" aria-hidden="true">
+              ✎
+            </span>
+          </div>
+
+          <div class="map-item">
+            <span class="map-number map-number-green">
+              02
+            </span>
+
+            <div>
+              <strong>В группе</strong>
+              <p>Вместе с преподавателем</p>
+            </div>
+
+            <span class="map-symbol" aria-hidden="true">
+              ✦
+            </span>
+          </div>
+
+          <div class="map-item">
+            <span class="map-number map-number-pink">
+              03
+            </span>
+
+            <div>
+              <strong>Индивидуально</strong>
+              <p>По персональному плану</p>
+            </div>
+
+            <span class="map-symbol" aria-hidden="true">
+              ↗
+            </span>
+          </div>
+
+          <p class="map-note">
+            Начнём с того, что важно вашему ребёнку.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- БЕСПЛАТНАЯ ДИАГНОСТИКА -->
+
+    <section
+      class="container diagnostic"
+      id="diagnostic"
+      aria-labelledby="diagnostic-title"
+    >
+      <div class="diagnostic-price">
+        <strong>0 ₽</strong>
+        <span>бесплатная диагностика</span>
+      </div>
+
+      <div class="diagnostic-content">
+        <h2 id="diagnostic-title">
+          Сначала познакомимся
+        </h2>
+
+        <p>
+          Перед началом обучения определяем уровень ребёнка,
+          пробелы и точки роста — и подбираем подходящий
+          формат обучения.
+        </p>
+      </div>
+
+      <button
+        class="button"
+        type="button"
+        data-choice="Бесплатная диагностика"
+        data-price="0 ₽"
+      >
+        Выбрать диагностику
+      </button>
+    </section>
+
+    <!-- ОСНОВНЫЕ ТАРИФЫ -->
+
+    <section
+      class="container catalog section"
+      id="catalog"
+      aria-labelledby="catalog-title"
+    >
+      <div class="catalog-heading">
+        <div>
+          <span class="eyebrow">
+            Программы и стоимость
+          </span>
+
+          <h2 id="catalog-title">
+            На каком вы этапе?
+          </h2>
+        </div>
+
+        <p>
+          Выберите раздел, чтобы посмотреть
+          подходящие программы.
+        </p>
+      </div>
+
+      <div
+        class="category-filters"
+        role="group"
+        aria-label="Выбор раздела тарифов"
+      >
+        <button
+          class="filter-button"
+          type="button"
+          data-category="preschool"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          Дошкольники
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="primary"
+          aria-pressed="true"
+          aria-controls="programs"
+        >
+          1–4 класс
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="middle"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          5–9 класс
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="senior"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          10–11 класс
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="oge"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          ОГЭ
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="ege"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          ЕГЭ
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-category="all"
+          aria-pressed="false"
+          aria-controls="programs"
+        >
+          Все программы
+        </button>
+      </div>
+
+      <p
+        class="filter-status"
+        id="filter-status"
+        role="status"
+      ></p>
+
+      <div id="programs"></div>
+
+      <noscript>
+        <p class="notice">
+          Для просмотра карточек тарифов включите JavaScript
+          в настройках браузера.
+        </p>
+      </noscript>
+    </section>
+
+    <!-- ПРОБНЫЙ МЕСЯЦ -->
+
+    <section class="trial-section">
+      <div class="container trial-grid">
+
+        <div class="trial-content">
+          <span class="eyebrow">
+            Маленький шаг — большое начало
+          </span>
+
+          <h2>«Попробовать школу»</h2>
+
+          <p>
+            Пробный месяц, чтобы познакомиться
+            с форматом обучения.
+          </p>
+
+          <ul class="feature-chips">
+            <li>Диагностика</li>
+            <li>4 занятия</li>
+            <li>ДЗ и проверка</li>
+            <li>Обратная связь</li>
+            <li>Итоговая диагностика</li>
+          </ul>
+        </div>
+
+        <div class="trial-card">
+          <span class="small-label">
+            Пробный месяц
+          </span>
+
+          <strong class="trial-price">
+            2 990 ₽
+          </strong>
+
+          <button
+            class="button"
+            type="button"
+            data-choice="Пробный месяц · «Попробовать школу»"
+            data-price="2 990 ₽"
+          >
+            Выбрать пробный месяц
+          </button>
+
+          <p>
+            После пробного месяца:
+            <br>
+            <strong>GROUP — 3 990 ₽ / мес</strong>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- МИНИ-КУРСЫ -->
+
+    <section
+      class="container section"
+      id="mini-courses"
+      aria-labelledby="mini-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">Разбираемся в конкретной теме</span>
+
+        <h2 id="mini-title">Мини-курсы</h2>
+
+        <p>
+          Одна тема — понятная цель.
+          Стоимость мини-курсов: 990–2 990 ₽.
+        </p>
+      </div>
+
+      <div class="tariff-grid" id="mini-cards"></div>
+    </section>
+
+    <!-- ЛЕТНИЕ ПРОГРАММЫ -->
+
+    <section class="summer-section">
+      <div
+        class="container section"
+        id="summer"
+        aria-labelledby="summer-title"
+      >
+        <div class="section-heading">
+          <span class="eyebrow">Лето с пользой</span>
+
+          <h2 id="summer-title">Летние программы</h2>
+
+          <p>
+            Повторяем пройденное и готовимся
+            к следующему учебному году.
+          </p>
+        </div>
+
+        <div class="tariff-grid" id="summer-cards"></div>
+      </div>
+    </section>
+
+    <!-- ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ -->
+
+    <section
+      class="container section"
+      id="extras"
+      aria-labelledby="extras-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">Поддержка в нужный момент</span>
+
+        <h2 id="extras-title">Дополнительная помощь</h2>
+
+        <p>
+          Когда нужно разобрать конкретную тему
+          или задать вопросы преподавателю.
+        </p>
+      </div>
+
+      <div class="tariff-grid" id="extra-cards"></div>
+    </section>
+
+    <!-- КОРОТКОЕ СРАВНЕНИЕ -->
+
+    <section
+      class="container section comparison"
+      aria-labelledby="comparison-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">Всё на одном экране</span>
+
+        <h2 id="comparison-title">
+          Тарифы — коротко
+        </h2>
+
+        <p>
+          Базовые форматы школьных занятий.
+          Цены на экзамены, комплексы и другие программы
+          указаны отдельно в карточках выше.
+        </p>
+      </div>
+
+      <div
+        class="table-wrapper"
+        role="region"
+        aria-label="Сравнение тарифов"
+        tabindex="0"
+      >
+        <table>
+          <caption class="visually-hidden">
+            Стоимость и форматы основных тарифов
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Тариф</th>
+              <th scope="col">Цена в месяц</th>
+              <th scope="col">Формат</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">START</th>
+              <td>1 990 ₽</td>
+              <td>Самостоятельно</td>
+            </tr>
+
+            <tr>
+              <th scope="row">GROUP</th>
+              <td>3 990 ₽</td>
+              <td>Преподаватель + группа</td>
+            </tr>
+
+            <tr>
+              <th scope="row">GROUP PRO</th>
+              <td>5 490 ₽</td>
+              <td>Группа + сопровождение</td>
+            </tr>
+
+            <tr>
+              <th scope="row">PERSONAL</th>
+              <td>9 900 ₽</td>
+              <td>Индивидуально</td>
+            </tr>
+
+            <tr>
+              <th scope="row">PRO</th>
+              <td>от 9 990 ₽</td>
+              <td>Экзамены + усиленное сопровождение</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- КАК НАЧАТЬ -->
+
+    <section
+      class="container section"
+      id="how-to-start"
+      aria-labelledby="start-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">От знакомства к первым успехам</span>
+
+        <h2 id="start-title">Как начать?</h2>
+
+        <p>
+          Первый шаг — понять, что нужно
+          именно вашему ребёнку.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-number">01</span>
+
+          <h3>Пройти диагностику</h3>
+
+          <p>
+            Определим уровень, пробелы
+            и точки роста.
+          </p>
+        </li>
+
+        <li class="step">
+          <span class="step-number">02</span>
+
+          <h3>Выбрать программу</h3>
+
+          <p>
+            Подберём формат и обсудим
+            цели обучения.
+          </p>
+        </li>
+
+        <li class="step">
+          <span class="step-number">03</span>
+
+          <h3>Согласовать детали</h3>
+
+          <p>
+            Уточним расписание, состав программы
+            и порядок оплаты.
+          </p>
+        </li>
+
+        <li class="step">
+          <span class="step-number">04</span>
+
+          <h3>Начать заниматься</h3>
+
+          <p>
+            Двигаемся к новым знаниям
+            шаг за шагом.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ВОПРОСЫ -->
+
+    <section
+      class="container section faq-section"
+      aria-labelledby="faq-title"
+    >
+      <div class="section-heading">
+        <span class="eyebrow">Помогаем разобраться</span>
+
+        <h2 id="faq-title">Остались вопросы?</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>
+            С чего начать, если сложно выбрать тариф?
+          </summary>
+
+          <p>
+            С бесплатной диагностики.
+            Она поможет определить уровень ребёнка
+            и подобрать подходящий формат обучения.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Чем GROUP отличается от PERSONAL?
+          </summary>
+
+          <p>
+            GROUP — занятия в группе с преподавателем.
+            PERSONAL — индивидуальный формат.
+            Точный состав указан в карточках вашего раздела.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Все цены указаны за месяц?
+          </summary>
+
+          <p>
+            У ежемесячных программ есть пометка «/ мес».
+            Мини-курсы, отдельные услуги и некоторые летние
+            программы указаны без этой пометки.
+            Если стоимость рассчитана за предмет,
+            это отдельно отмечено в карточке.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Можно ли уже оплатить занятия на сайте?
+          </summary>
+
+          <p>
+            Онлайн-оплата пока недоступна.
+            Сейчас можно выбрать программу
+            и скопировать её название и стоимость.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="footer-brand" href="index.html">
+  <img
+    class="footer-logo"
+    src="images/logo.png"
+    alt=""
+    width="64"
+    height="64"
+  >
+
+  <span>Азимут знаний</span>
+</a>
+
+      <p>Учимся. Пробуем. Открываем новое.</p>
+
+      <a href="index.html">
+        ← На главную
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- ЗАКРЕПЛЁННАЯ КНОПКА -->
+
+  <aside class="bottom-dock" aria-label="Помощь с выбором">
+    <div class="dock-text">
+      <strong>Кажется, вариантов много?</strong>
+
+      <span>
+        Начнём с бесплатной диагностики
+      </span>
+    </div>
+
+    <button
+      class="button"
+      type="button"
+      data-choice="Помощь с выбором тарифа · бесплатная диагностика"
+      data-price="0 ₽"
+    >
+      Помогите выбрать тариф
+      <span aria-hidden="true">↗</span>
+    </button>
+  </aside>
+
+  <!-- ОКНО ВЫБРАННОЙ ПРОГРАММЫ -->
+
+  <dialog
+    class="choice-dialog"
+    id="choice-dialog"
+    aria-labelledby="choice-title"
+    aria-describedby="choice-notice"
+  >
+    <form method="dialog" class="dialog-close-form">
+      <button
+        class="close-button"
+        type="submit"
+        aria-label="Закрыть окно"
+        autofocus
+      >
+        ×
+      </button>
+    </form>
+
+    <span class="eyebrow">Ваш выбор</span>
+
+    <h2 id="choice-title">Выбранная программа</h2>
+
+    <p class="choice-name" id="choice-name"></p>
+
+    <p class="choice-price" id="choice-price"></p>
+
+    <p class="choice-notice" id="choice-notice">
+      Онлайн-запись пока недоступна.
+      Скопируйте выбранную программу,
+      чтобы обсудить её со школой.
+    </p>
+
+    <button
+      class="button"
+      id="copy-choice"
+      type="button"
+    >
+      Скопировать выбор
+    </button>
+
+    <p
+      class="copy-status"
+      id="copy-status"
+      role="status"
+    ></p>
+  </dialog>
+
+</body>
+</html>

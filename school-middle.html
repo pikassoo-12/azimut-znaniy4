@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Обучение по классам — Азимут знаний</title>
+
+  <meta
+    name="description"
+    content="Дополнительные онлайн-занятия для школьников: предметы, форматы обучения, преподаватели и тарифы."
+  >
+
+  <meta name="theme-color" content="#7048eb">
+
+  <link rel="stylesheet" href="tariffs.css">
+  <link rel="stylesheet" href="school-level.css">
+
+  <script src="school-level.js" defer></script>
+</head>
+
+<body class="level-page">
+
+  <a class="skip-link" href="#main">
+    Перейти к содержимому
+  </a>
+
+  <!-- ШАПКА -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html">
+        <img
+          src="images/logo.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="logo-text">
+          <strong>Азимут знаний</strong>
+
+          <small>
+            Онлайн-центр дополнительного образования
+          </small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="#subjects">Предметы</a>
+        <a href="tariffs.html">Тарифы</a>
+      </nav>
+
+      <a
+        class="button button-small header-button"
+        href="diagnostic.html"
+      >
+        Бесплатная диагностика
+      </a>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+
+    <section class="level-hero">
+      <div class="container">
+
+        <nav class="level-breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span aria-hidden="true">/</span>
+          <span id="level-breadcrumb">Обучение по классам</span>
+        </nav>
+
+        <div class="level-hero-grid">
+
+          <div>
+            <span class="eyebrow" id="level-label"></span>
+
+            <h1 id="level-title"></h1>
+
+            <p class="level-lead" id="level-description"></p>
+
+            <div class="level-actions">
+              <a class="button" href="diagnostic.html">
+                Бесплатная диагностика
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="button button-outline"
+                href="#class-program"
+              >
+                Что будем изучать
+              </a>
+            </div>
+
+            <p class="level-hero-note">
+              Дополнительные занятия к основной школьной программе.
+            </p>
+          </div>
+
+          <aside class="level-notebook">
+            <span class="level-sticker">
+              У каждого — свой темп
+            </span>
+
+            <span
+              class="level-symbol"
+              id="level-symbol"
+              aria-hidden="true"
+            ></span>
+
+            <h2 id="level-note-title"></h2>
+
+            <ul class="level-note-list" id="level-note-list"></ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМУ ПОДОЙДУТ ЗАНЯТИЯ -->
+
+    <section class="container section">
+      <div class="section-heading">
+        <span class="eyebrow">Знакомые ситуации?</span>
+
+        <h2>Когда занятия могут помочь</h2>
+
+        <p>
+          Начинаем с конкретной задачи ребёнка
+          и подбираем подходящий формат.
+        </p>
+      </div>
+
+      <div class="level-grid" id="level-needs"></div>
+    </section>
+
+    <!-- ПРОГРАММА ПО КЛАССАМ -->
+
+    <section class="level-soft" id="class-program">
+      <div class="container section">
+
+        <div class="section-heading">
+          <span class="eyebrow">От простого к сложному</span>
+
+          <h2>Что важно на вашем этапе?</h2>
+
+          <p>
+            Выберите класс. Ниже — примеры учебных задач;
+            конкретные темы подбираются после знакомства
+            с уровнем ребёнка.
+          </p>
+        </div>
+
+        <div
+          class="level-class-tabs"
+          id="level-class-tabs"
+          role="group"
+          aria-label="Выбор класса"
+        ></div>
+
+        <div
+          class="level-class-panel"
+          id="level-class-panel"
+          aria-labelledby="selected-class-title"
+        >
+          <div>
+            <span class="eyebrow" id="selected-class-label"></span>
+
+            <h3 id="selected-class-title"></h3>
+
+            <p id="selected-class-description"></p>
+          </div>
+
+          <ul class="level-task-list" id="selected-class-tasks"></ul>
+        </div>
+
+        <p
+          class="level-status"
+          id="level-class-status"
+          role="status"
+        ></p>
+
+      </div>
+    </section>
+
+    <!-- ПРЕДМЕТЫ -->
+
+    <section class="container section" id="subjects">
+      <div class="section-heading">
+        <span class="eyebrow">Выбираем направление</span>
+
+        <h2>Какие предметы можно изучать</h2>
+
+        <p>
+          Откройте предмет, чтобы посмотреть направления
+          занятий и карточки преподавателей.
+        </p>
+      </div>
+
+      <div class="level-subjects" id="level-subjects"></div>
+
+      <p class="level-caption">
+        Темы и доступность занятий уточняются для выбранного класса.
+      </p>
+    </section>
+
+    <!-- КАК УЧИМСЯ -->
+
+    <section class="level-soft">
+      <div class="container section">
+
+        <div class="section-heading">
+          <span class="eyebrow">Понятный порядок</span>
+
+          <h2>Как строится обучение</h2>
+
+          <p>
+            Формат определяет, сколько поддержки
+            получает ребёнок и как проходит работа с заданиями.
+          </p>
+        </div>
+
+        <ol class="steps">
+
+          <li class="step">
+            <span class="step-number">01</span>
+            <h3>Определяем точку старта</h3>
+            <p>
+              На бесплатной диагностике смотрим
+              уровень знаний, пробелы и точки роста.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step-number">02</span>
+            <h3>Выбираем задачу и формат</h3>
+            <p>
+              Один предмет или комплекс,
+              самостоятельный курс, группа
+              или индивидуальные занятия.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step-number">03</span>
+            <h3>Разбираем и практикуемся</h3>
+            <p>
+              Работаем с темами и заданиями.
+              В форматах с преподавателем
+              можно задавать вопросы.
+            </p>
+          </li>
+
+          <li class="step">
+            <span class="step-number">04</span>
+            <h3>Смотрим на результат</h3>
+            <p>
+              Возвращаемся к трудным заданиям.
+              Проверка и сопровождение
+              зависят от выбранного тарифа.
+            </p>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ПРЕПОДАВАТЕЛИ -->
+
+    <section class="container section">
+      <div class="level-teacher-block">
+
+        <div class="level-teacher-placeholder" aria-hidden="true">
+          <span>✦</span>
+          <p>Здесь познакомим вас с командой</p>
+        </div>
+
+        <div>
+          <span class="eyebrow">Кто будет рядом</span>
+
+          <h2>Преподаватель под вашу учебную задачу</h2>
+
+          <p id="level-teacher-description"></p>
+
+          <p class="level-caption">
+            Фотографии и информация о преподавателях
+            появятся на страницах предметов.
+          </p>
+
+          <a
+            class="button button-outline"
+            href="#subjects"
+          >
+            Выбрать предмет
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ФОРМАТЫ И ЦЕНЫ -->
+
+    <section class="level-soft" id="formats">
+      <div class="container section">
+
+        <div class="section-heading">
+          <span class="eyebrow">Сколько поддержки нужно?</span>
+
+          <h2>Выберите формат занятий</h2>
+
+          <p>
+            Ниже — базовые тарифы школьной программы.
+            Комплексы и подготовка к экзаменам
+            представлены отдельно на странице тарифов.
+          </p>
+        </div>
+
+        <div class="level-formats" id="level-formats"></div>
+
+        <div class="level-pack-note">
+          <h3>Нужна помощь по нескольким предметам?</h3>
+
+          <p id="level-pack-description"></p>
+
+          <a
+            class="button button-outline"
+            id="level-tariffs-link"
+            href="tariffs.html"
+          >
+            Все программы и тарифы
+          </a>
+        </div>
+
+        <div class="level-exams" id="level-exams" hidden>
+          <div>
+            <span class="eyebrow">Отдельная учебная цель</span>
+            <h3>Подготовка к ОГЭ и ЕГЭ</h3>
+
+            <p>
+              Для экзаменов предусмотрены отдельные программы:
+              работа с заданиями, пробниками и разбором ошибок.
+              Состав зависит от тарифа.
+            </p>
+          </div>
+
+          <div class="level-actions">
+            <a class="button" href="tariffs.html#oge">
+              Тарифы ОГЭ
+            </a>
+
+            <a
+              class="button button-outline"
+              href="tariffs.html#ege"
+            >
+              Тарифы ЕГЭ
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- РОДИТЕЛЯМ -->
+
+    <section class="container section">
+      <div class="section-heading">
+        <span class="eyebrow">Без лишней неопределённости</span>
+        <h2>Что важно знать родителям</h2>
+      </div>
+
+      <div class="level-grid">
+
+        <article class="level-info-card">
+          <span class="level-card-number">01</span>
+          <h3>Начните с одной задачи</h3>
+
+          <p>
+            Например, понять дроби, разобраться
+            с правилами или подготовиться к экзамену.
+            Так проще выбрать направление.
+          </p>
+        </article>
+
+        <article class="level-info-card">
+          <span class="level-card-number">02</span>
+          <h3>Уточните организацию занятий</h3>
+
+          <p>
+            Перед оплатой согласуйте расписание,
+            длительность уроков и порядок подключения.
+          </p>
+        </article>
+
+        <article class="level-info-card">
+          <span class="level-card-number">03</span>
+          <h3>Проверьте состав тарифа</h3>
+
+          <p>
+            Домашние задания, проверка, сопровождение
+            и отчёты могут отличаться
+            в разных программах.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="container section faq-section">
+      <div class="section-heading">
+        <span class="eyebrow">Вопросы родителей</span>
+        <h2>Давайте разберёмся</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>Эти занятия заменяют обычную школу?</summary>
+          <p>
+            Центр предлагает дополнительное образование:
+            помощь по предметам, укрепление знаний
+            и подготовку к экзаменам.
+            Основное школьное обучение продолжается отдельно.
+          </p>
+        </details>
+
+        <details>
+          <summary>Можно заниматься только одним предметом?</summary>
+          <p>
+            Да. Можно выбрать отдельное направление
+            или посмотреть комплексные программы
+            для нескольких предметов.
+          </p>
+        </details>
+
+        <details>
+          <summary>Что делать, если ребёнок отстаёт?</summary>
+          <p>
+            Начать с бесплатной диагностики:
+            определить, какие темы вызывают трудности,
+            и подобрать подходящий формат обучения.
+          </p>
+        </details>
+
+        <details>
+          <summary>Как выбрать между группой и индивидуальными занятиями?</summary>
+          <p>
+            В группе ребёнок занимается вместе с другими учениками.
+            Индивидуальный формат предполагает работу один на один.
+            Выбор стоит обсудить с учётом задачи и уровня ребёнка.
+          </p>
+        </details>
+
+        <details>
+          <summary>Что нужно для занятий онлайн?</summary>
+          <p>
+            Компьютер или планшет, стабильный интернет
+            и удобное рабочее место.
+            Для встреч с преподавателем —
+            камера и микрофон.
+            Остальные материалы уточняются перед началом.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ФИНАЛЬНЫЙ БЛОК -->
+
+    <section class="container section">
+      <div class="level-final">
+
+        <div>
+          <span class="eyebrow">Первый шаг — бесплатно</span>
+
+          <h2>Начнём с того, что нужно вашему ребёнку</h2>
+
+          <p>
+            Определим уровень, пробелы и точки роста —
+            и подберём подходящий формат занятий.
+          </p>
+        </div>
+
+        <a class="button" href="diagnostic.html">
+          Бесплатная диагностика
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+      <nav class="level-other-pages" aria-label="Другие ступени обучения">
+        <a href="school-primary.html">1–4 классы</a>
+        <a href="school-middle.html">5–8 классы</a>
+        <a href="school-senior.html">9–11 классы</a>
+      </nav>
+    </section>
+
+    <noscript>
+      <p class="container notice">
+        Для просмотра программы по классам включите JavaScript.
+        Все цены также доступны на странице тарифов.
+      </p>
+    </noscript>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="logo" href="index.html">
+        <img
+          src="images/logo.png"
+          alt=""
+          width="64"
+          height="64"
+        >
+
+        <span class="logo-text">
+          <strong>Азимут знаний</strong>
+        </span>
+      </a>
+
+      <p>Учимся. Пробуем. Открываем новое.</p>
+
+      <a href="index.html">← На главную</a>
+
+    </div>
+  </footer>
+
+  <aside class="bottom-dock" aria-label="Знакомство со школой">
+    <div class="dock-text">
+      <strong>С чего начать?</strong>
+      <span>Познакомимся на бесплатной диагностике</span>
+    </div>
+
+    <a class="button" href="diagnostic.html">
+      Бесплатная диагностика
+    </a>
+  </aside>
+
+</body>
+</html>
